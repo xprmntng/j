@@ -5,7 +5,7 @@ t, n = get_ints()
 
 cables = []
 for i in range(n):
-    time_taken, impact = map(int, input().strip().split())
+    time_taken, impact = get_ints()
     cables.append((time_taken, impact))
 
 def permutate_cuts(cables, cable_index, running_time_taken, running_impact):
